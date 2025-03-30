@@ -1,0 +1,322 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// User model for authentication and user management
+model User {
+  id            String    @id @default(cuid())
+  name          String
+  email         String    @unique
+  password      String
+  role          Role      @default(USER)
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+  profile       Profile?
+  teacher       Teacher?
+  student       Student?
+}
+
+// Profile model for user profiles
+model Profile {
+  id          String    @id @default(cuid())
+  userId      String    @unique
+  user        User      @relation(fields: [userId], references: [id])
+  avatar      String?
+  phone       String?
+  address     String?
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+}
+
+// Student model
+model Student {
+  id            String    @id @default(cuid())
+  userId        String    @unique
+  user          User      @relation(fields: [userId], references: [id])
+  admissionNo   String    @unique
+  classId       String
+  class         Class     @relation(fields: [classId], references: [id])
+  rollNo        String
+  dateOfBirth   DateTime
+  gender        Gender
+  parentName    String
+  parentPhone   String
+  parentEmail   String?
+  address       String
+  attendance    Attendance[]
+  examResults   ExamResult[]
+  fees          Fee[]
+  transport     TransportAssignment?
+  hostel        HostelAssignment?
+  library       LibraryAssignment[]
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+}
+
+// Teacher model
+model Teacher {
+  id            String    @id @default(cuid())
+  userId        String    @unique
+  user          User      @relation(fields: [userId], references: [id])
+  employeeId    String    @unique
+  qualification String
+  specialization String?
+  joiningDate   DateTime
+  classAssignments ClassAssignment[]
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+}
+
+// Class model
+model Class {
+  id            String    @id @default(cuid())
+  name          String
+  section       String
+  academicYear  String
+  students      Student[]
+  assignments   ClassAssignment[]
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+}
+
+// Class Assignment model
+model ClassAssignment {
+  id            String    @id @default(cuid())
+  classId       String
+  class         Class     @relation(fields: [classId], references: [id])
+  teacherId     String
+  teacher       Teacher   @relation(fields: [teacherId], references: [id])
+  subject       String
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+}
+
+// Attendance model
+model Attendance {
+  id            String    @id @default(cuid())
+  studentId     String
+  student       Student   @relation(fields: [studentId], references: [id])
+  date          DateTime
+  status        AttendanceStatus
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+}
+
+// Exam model
+model Exam {
+  id            String    @id @default(cuid())
+  name          String
+  type          ExamType
+  startDate     DateTime
+  endDate       DateTime
+  classId       String
+  class         Class     @relation(fields: [classId], references: [id])
+  results       ExamResult[]
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+}
+
+// Exam Result model
+model ExamResult {
+  id            String    @id @default(cuid())
+  examId        String
+  exam          Exam      @relation(fields: [examId], references: [id])
+  studentId     String
+  student       Student   @relation(fields: [studentId], references: [id])
+  marks         Float
+  grade         String
+  remarks       String?
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+}
+
+// Fee model
+model Fee {
+  id            String    @id @default(cuid())
+  studentId     String
+  student       Student   @relation(fields: [studentId], references: [id])
+  amount        Float
+  type          FeeType
+  status        PaymentStatus
+  dueDate       DateTime
+  paidDate      DateTime?
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+}
+
+// Transport Route model
+model TransportRoute {
+  id            String    @id @default(cuid())
+  name          String
+  startPoint    String
+  endPoint      String
+  stops         String[]
+  assignments   TransportAssignment[]
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+}
+
+// Transport Assignment model
+model TransportAssignment {
+  id            String    @id @default(cuid())
+  studentId     String    @unique
+  student       Student   @relation(fields: [studentId], references: [id])
+  routeId       String
+  route         TransportRoute @relation(fields: [routeId], references: [id])
+  pickupPoint   String
+  dropPoint     String
+  fee           Float
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+}
+
+// Hostel Room model
+model HostelRoom {
+  id            String    @id @default(cuid())
+  number        String
+  type          RoomType
+  capacity      Int
+  occupied      Int      @default(0)
+  assignments   HostelAssignment[]
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+}
+
+// Hostel Assignment model
+model HostelAssignment {
+  id            String    @id @default(cuid())
+  studentId     String    @unique
+  student       Student   @relation(fields: [studentId], references: [id])
+  roomId        String
+  room          HostelRoom @relation(fields: [roomId], references: [id])
+  startDate     DateTime
+  endDate       DateTime?
+  fee           Float
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+}
+
+// Library Book model
+model LibraryBook {
+  id            String    @id @default(cuid())
+  title         String
+  author        String
+  isbn          String    @unique
+  category      String
+  totalCopies   Int
+  availableCopies Int
+  assignments   LibraryAssignment[]
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+}
+
+// Library Assignment model
+model LibraryAssignment {
+  id            String    @id @default(cuid())
+  bookId        String
+  book          LibraryBook @relation(fields: [bookId], references: [id])
+  studentId     String
+  student       Student   @relation(fields: [studentId], references: [id])
+  issueDate     DateTime
+  dueDate       DateTime
+  returnDate    DateTime?
+  status        BookStatus
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+}
+
+// Inventory Item model
+model InventoryItem {
+  id            String    @id @default(cuid())
+  name          String
+  category      String
+  description   String?
+  quantity      Int
+  unit          String
+  transactions  InventoryTransaction[]
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+}
+
+// Inventory Transaction model
+model InventoryTransaction {
+  id            String    @id @default(cuid())
+  itemId        String
+  item          InventoryItem @relation(fields: [itemId], references: [id])
+  type          TransactionType
+  quantity      Int
+  date          DateTime
+  notes         String?
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+}
+
+// Enums
+enum Role {
+  ADMIN
+  TEACHER
+  STUDENT
+  USER
+}
+
+enum Gender {
+  MALE
+  FEMALE
+  OTHER
+}
+
+enum AttendanceStatus {
+  PRESENT
+  ABSENT
+  LATE
+  EXCUSED
+}
+
+enum ExamType {
+  MID_TERM
+  FINAL
+  QUIZ
+  ASSIGNMENT
+}
+
+enum FeeType {
+  TUITION
+  TRANSPORT
+  HOSTEL
+  LIBRARY
+  OTHER
+}
+
+enum PaymentStatus {
+  PENDING
+  PAID
+  OVERDUE
+  CANCELLED
+}
+
+enum RoomType {
+  SINGLE
+  DOUBLE
+  TRIPLE
+  QUAD
+}
+
+enum BookStatus {
+  ISSUED
+  RETURNED
+  OVERDUE
+  LOST
+}
+
+enum TransactionType {
+  IN
+  OUT
+} 
