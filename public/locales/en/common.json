@@ -1,0 +1,137 @@
+{
+  "app_name": "School Management System",
+  "dashboard": "Dashboard",
+  "navigation": {
+    "dashboard": "Dashboard",
+    "students": "Students",
+    "teachers": "Teachers",
+    "classes": "Classes",
+    "attendance": "Attendance",
+    "exams": "Exams",
+    "fees": "Fees",
+    "transport": "Transport",
+    "hostel": "Hostel",
+    "library": "Library",
+    "inventory": "Inventory",
+    "reports": "Reports",
+    "drawing": "Drawing Canvas",
+    "settings": "Settings"
+  },
+  "students": {
+    "all": "All Students",
+    "add": "Add Student",
+    "import": "Bulk Import"
+  },
+  "teachers": {
+    "all": "All Teachers",
+    "add": "Add Teacher",
+    "assign": "Assign Classes"
+  },
+  "classes": {
+    "all": "All Classes",
+    "add": "Add Class",
+    "assign": "Assign Teachers"
+  },
+  "attendance": {
+    "daily": "Daily Attendance",
+    "monthly": "Monthly Report",
+    "history": "Student History"
+  },
+  "exams": {
+    "schedule": "Exam Schedule",
+    "results": "Results",
+    "report_cards": "Report Cards"
+  },
+  "fees": {
+    "structure": "Fee Structure",
+    "collections": "Collections",
+    "due": "Due Payments"
+  },
+  "transport": {
+    "routes": "Routes",
+    "assignments": "Assignments",
+    "fees": "Fees"
+  },
+  "hostel": {
+    "rooms": "Rooms",
+    "assignments": "Assignments",
+    "fees": "Fees"
+  },
+  "library": {
+    "books": "Books",
+    "issued": "Issued Books",
+    "returns": "Returns"
+  },
+  "inventory": {
+    "items": "Items",
+    "stock": "Stock",
+    "transactions": "Transactions"
+  },
+  "reports": {
+    "academic": "Academic",
+    "financial": "Financial",
+    "attendance": "Attendance"
+  },
+  "settings": {
+    "general": "General",
+    "account": "Account",
+    "security": "Security",
+    "users": "Users",
+    "roles": "Roles",
+    "title": "Settings",
+    "appearance": "Appearance",
+    "theme": "Theme",
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System",
+    "color_scheme": "Color Scheme",
+    "font_size": "Font Size",
+    "small": "Small",
+    "medium": "Medium",
+    "large": "Large",
+    "language": "Language"
+  },
+  "auth": {
+    "sign_in": "Sign In",
+    "sign_out": "Sign Out",
+    "register": "Register",
+    "forgot_password": "Forgot Password",
+    "reset_password": "Reset Password",
+    "email": "Email",
+    "password": "Password",
+    "confirm_password": "Confirm Password",
+    "remember_me": "Remember Me",
+    "login": "Login"
+  },
+  "actions": {
+    "save": "Save",
+    "cancel": "Cancel",
+    "edit": "Edit",
+    "delete": "Delete",
+    "view": "View",
+    "add": "Add",
+    "search": "Search",
+    "filter": "Filter",
+    "export": "Export",
+    "import": "Import",
+    "print": "Print",
+    "download": "Download",
+    "upload": "Upload",
+    "submit": "Submit",
+    "confirm": "Confirm",
+    "reject": "Reject"
+  },
+  "languages": {
+    "en": "English",
+    "es": "Spanish",
+    "fr": "French",
+    "ar": "Arabic",
+    "zh": "Chinese"
+  },
+  "security": {
+    "change_password": "Change Password",
+    "two_factor": "Two-Factor Authentication",
+    "login_history": "Login History",
+    "security_logs": "Security Logs"
+  }
+} 

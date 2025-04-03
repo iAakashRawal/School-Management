@@ -30,6 +30,7 @@ export function DrawingCanvas({
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const [isDrawing, setIsDrawing] = useState(false);
   const [lastPoint, setLastPoint] = useState<Point | null>(null);
+  const [canvasContent, setCanvasContent] = useState<ImageData | null>(null);
 
   // Initialize canvas and set background color
   useEffect(() => {
@@ -46,7 +47,36 @@ export function DrawingCanvas({
     // Fill with background color
     context.fillStyle = backgroundColor;
     context.fillRect(0, 0, canvas.width, canvas.height);
+
+    // If we have saved content, restore it after changing background
+    if (canvasContent) {
+      // Store current pixel data before applying background
+      const currentImageData = context.getImageData(0, 0, canvas.width, canvas.height);
+      
+      // Apply the background
+      context.fillStyle = backgroundColor;
+      context.fillRect(0, 0, canvas.width, canvas.height);
+      
+      // Put saved content back
+      context.putImageData(canvasContent, 0, 0);
+    }
+
+    // Notify parent component of changes
+    if (onChange && canvas) {
+      onChange(canvas.toDataURL());
+    }
   }, [width, height, backgroundColor]);
+
+  // Save canvas content when drawing
+  const saveCanvasContent = () => {
+    if (!canvasRef.current) return;
+    
+    const context = canvasRef.current.getContext('2d');
+    if (!context) return;
+    
+    // Store current drawing
+    setCanvasContent(context.getImageData(0, 0, canvasRef.current.width, canvasRef.current.height));
+  };
 
   // Get canvas coordinates from mouse/touch event
   const getCoordinates = (event: React.MouseEvent | React.TouchEvent): Point | null => {
@@ -119,6 +149,9 @@ export function DrawingCanvas({
   const endDrawing = () => {
     setIsDrawing(false);
     setLastPoint(null);
+    
+    // Save the current state of the canvas
+    saveCanvasContent();
   };
 
   // Clear the canvas
@@ -130,6 +163,9 @@ export function DrawingCanvas({
 
     context.fillStyle = backgroundColor;
     context.fillRect(0, 0, canvasRef.current.width, canvasRef.current.height);
+    
+    // Reset saved content
+    setCanvasContent(null);
 
     // Notify parent component of changes
     if (onChange && canvasRef.current) {
@@ -142,6 +178,7 @@ export function DrawingCanvas({
       <canvas
         ref={canvasRef}
         className="border border-gray-300 rounded-md touch-none"
+        style={{ backgroundColor }}
         onMouseDown={startDrawing}
         onMouseMove={draw}
         onMouseUp={endDrawing}

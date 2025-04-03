@@ -1,0 +1,137 @@
+{
+  "app_name": "نظام إدارة المدرسة",
+  "dashboard": "لوحة التحكم",
+  "navigation": {
+    "dashboard": "لوحة التحكم",
+    "students": "الطلاب",
+    "teachers": "المعلمون",
+    "classes": "الفصول",
+    "attendance": "الحضور",
+    "exams": "الامتحانات",
+    "fees": "الرسوم",
+    "transport": "النقل",
+    "hostel": "السكن",
+    "library": "المكتبة",
+    "inventory": "المخزون",
+    "reports": "التقارير",
+    "drawing": "لوحة الرسم",
+    "settings": "الإعدادات"
+  },
+  "students": {
+    "all": "جميع الطلاب",
+    "add": "إضافة طالب",
+    "import": "استيراد بكميات كبيرة"
+  },
+  "teachers": {
+    "all": "جميع المعلمين",
+    "add": "إضافة معلم",
+    "assign": "تعيين الفصول"
+  },
+  "classes": {
+    "all": "جميع الفصول",
+    "add": "إضافة فصل",
+    "assign": "تعيين المعلمين"
+  },
+  "attendance": {
+    "daily": "الحضور اليومي",
+    "monthly": "التقرير الشهري",
+    "history": "سجل الطالب"
+  },
+  "exams": {
+    "schedule": "جدول الامتحانات",
+    "results": "النتائج",
+    "report_cards": "بطاقات التقرير"
+  },
+  "fees": {
+    "structure": "هيكل الرسوم",
+    "collections": "التحصيلات",
+    "due": "المدفوعات المستحقة"
+  },
+  "transport": {
+    "routes": "الطرق",
+    "assignments": "التعيينات",
+    "fees": "الرسوم"
+  },
+  "hostel": {
+    "rooms": "الغرف",
+    "assignments": "التعيينات",
+    "fees": "الرسوم"
+  },
+  "library": {
+    "books": "الكتب",
+    "issued": "الكتب المستعارة",
+    "returns": "المرتجعات"
+  },
+  "inventory": {
+    "items": "العناصر",
+    "stock": "المخزون",
+    "transactions": "المعاملات"
+  },
+  "reports": {
+    "academic": "أكاديمي",
+    "financial": "مالي",
+    "attendance": "الحضور"
+  },
+  "settings": {
+    "general": "عام",
+    "account": "الحساب",
+    "security": "الأمان",
+    "users": "المستخدمون",
+    "roles": "الأدوار",
+    "title": "الإعدادات",
+    "appearance": "المظهر",
+    "theme": "السمة",
+    "light": "فاتح",
+    "dark": "داكن",
+    "system": "النظام",
+    "color_scheme": "نظام الألوان",
+    "font_size": "حجم الخط",
+    "small": "صغير",
+    "medium": "متوسط",
+    "large": "كبير",
+    "language": "اللغة"
+  },
+  "auth": {
+    "sign_in": "تسجيل الدخول",
+    "sign_out": "تسجيل الخروج",
+    "register": "التسجيل",
+    "forgot_password": "نسيت كلمة المرور",
+    "reset_password": "إعادة تعيين كلمة المرور",
+    "email": "البريد الإلكتروني",
+    "password": "كلمة المرور",
+    "confirm_password": "تأكيد كلمة المرور",
+    "remember_me": "تذكرني",
+    "login": "تسجيل الدخول"
+  },
+  "actions": {
+    "save": "حفظ",
+    "cancel": "إلغاء",
+    "edit": "تعديل",
+    "delete": "حذف",
+    "view": "عرض",
+    "add": "إضافة",
+    "search": "بحث",
+    "filter": "تصفية",
+    "export": "تصدير",
+    "import": "استيراد",
+    "print": "طباعة",
+    "download": "تنزيل",
+    "upload": "تحميل",
+    "submit": "إرسال",
+    "confirm": "تأكيد",
+    "reject": "رفض"
+  },
+  "languages": {
+    "en": "الإنجليزية",
+    "es": "الإسبانية",
+    "fr": "الفرنسية",
+    "ar": "العربية",
+    "zh": "الصينية"
+  },
+  "security": {
+    "change_password": "تغيير كلمة المرور",
+    "two_factor": "المصادقة الثنائية",
+    "login_history": "سجل تسجيل الدخول",
+    "security_logs": "سجلات الأمان"
+  }
+} 

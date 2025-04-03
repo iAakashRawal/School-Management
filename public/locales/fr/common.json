@@ -1,0 +1,137 @@
+{
+  "app_name": "Système de Gestion Scolaire",
+  "dashboard": "Tableau de Bord",
+  "navigation": {
+    "dashboard": "Tableau de Bord",
+    "students": "Élèves",
+    "teachers": "Enseignants",
+    "classes": "Classes",
+    "attendance": "Présence",
+    "exams": "Examens",
+    "fees": "Frais",
+    "transport": "Transport",
+    "hostel": "Internat",
+    "library": "Bibliothèque",
+    "inventory": "Inventaire",
+    "reports": "Rapports",
+    "drawing": "Toile de Dessin",
+    "settings": "Paramètres"
+  },
+  "students": {
+    "all": "Tous les Élèves",
+    "add": "Ajouter un Élève",
+    "import": "Importation en Masse"
+  },
+  "teachers": {
+    "all": "Tous les Enseignants",
+    "add": "Ajouter un Enseignant",
+    "assign": "Assigner des Classes"
+  },
+  "classes": {
+    "all": "Toutes les Classes",
+    "add": "Ajouter une Classe",
+    "assign": "Assigner des Enseignants"
+  },
+  "attendance": {
+    "daily": "Présence Quotidienne",
+    "monthly": "Rapport Mensuel",
+    "history": "Historique de l'Élève"
+  },
+  "exams": {
+    "schedule": "Calendrier d'Examens",
+    "results": "Résultats",
+    "report_cards": "Bulletins de Notes"
+  },
+  "fees": {
+    "structure": "Structure des Frais",
+    "collections": "Recouvrements",
+    "due": "Paiements en Retard"
+  },
+  "transport": {
+    "routes": "Itinéraires",
+    "assignments": "Attributions",
+    "fees": "Frais"
+  },
+  "hostel": {
+    "rooms": "Chambres",
+    "assignments": "Attributions",
+    "fees": "Frais"
+  },
+  "library": {
+    "books": "Livres",
+    "issued": "Livres Empruntés",
+    "returns": "Retours"
+  },
+  "inventory": {
+    "items": "Articles",
+    "stock": "Stock",
+    "transactions": "Transactions"
+  },
+  "reports": {
+    "academic": "Académique",
+    "financial": "Financier",
+    "attendance": "Présence"
+  },
+  "settings": {
+    "general": "Général",
+    "account": "Compte",
+    "security": "Sécurité",
+    "users": "Utilisateurs",
+    "roles": "Rôles",
+    "title": "Paramètres",
+    "appearance": "Apparence",
+    "theme": "Thème",
+    "light": "Clair",
+    "dark": "Sombre",
+    "system": "Système",
+    "color_scheme": "Schéma de Couleur",
+    "font_size": "Taille de Police",
+    "small": "Petit",
+    "medium": "Moyen",
+    "large": "Grand",
+    "language": "Langue"
+  },
+  "auth": {
+    "sign_in": "Se Connecter",
+    "sign_out": "Se Déconnecter",
+    "register": "S'inscrire",
+    "forgot_password": "Mot de Passe Oublié",
+    "reset_password": "Réinitialiser le Mot de Passe",
+    "email": "Email",
+    "password": "Mot de Passe",
+    "confirm_password": "Confirmer le Mot de Passe",
+    "remember_me": "Se Souvenir de Moi",
+    "login": "Connexion"
+  },
+  "actions": {
+    "save": "Sauvegarder",
+    "cancel": "Annuler",
+    "edit": "Modifier",
+    "delete": "Supprimer",
+    "view": "Voir",
+    "add": "Ajouter",
+    "search": "Rechercher",
+    "filter": "Filtrer",
+    "export": "Exporter",
+    "import": "Importer",
+    "print": "Imprimer",
+    "download": "Télécharger",
+    "upload": "Upload",
+    "submit": "Soumettre",
+    "confirm": "Confirmer",
+    "reject": "Rejeter"
+  },
+  "languages": {
+    "en": "Anglais",
+    "es": "Espagnol",
+    "fr": "Français",
+    "ar": "Arabe",
+    "zh": "Chinois"
+  },
+  "security": {
+    "change_password": "Changer le Mot de Passe",
+    "two_factor": "Authentification à Deux Facteurs",
+    "login_history": "Historique de Connexion",
+    "security_logs": "Journaux de Sécurité"
+  }
+} 

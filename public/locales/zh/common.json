@@ -1,0 +1,137 @@
+{
+  "app_name": "学校管理系统",
+  "dashboard": "仪表板",
+  "navigation": {
+    "dashboard": "仪表板",
+    "students": "学生",
+    "teachers": "教师",
+    "classes": "班级",
+    "attendance": "考勤",
+    "exams": "考试",
+    "fees": "费用",
+    "transport": "交通",
+    "hostel": "宿舍",
+    "library": "图书馆",
+    "inventory": "库存",
+    "reports": "报告",
+    "drawing": "绘图画布",
+    "settings": "设置"
+  },
+  "students": {
+    "all": "所有学生",
+    "add": "添加学生",
+    "import": "批量导入"
+  },
+  "teachers": {
+    "all": "所有教师",
+    "add": "添加教师",
+    "assign": "分配班级"
+  },
+  "classes": {
+    "all": "所有班级",
+    "add": "添加班级",
+    "assign": "分配教师"
+  },
+  "attendance": {
+    "daily": "日常考勤",
+    "monthly": "月度报告",
+    "history": "学生历史"
+  },
+  "exams": {
+    "schedule": "考试安排",
+    "results": "成绩",
+    "report_cards": "成绩单"
+  },
+  "fees": {
+    "structure": "费用结构",
+    "collections": "收款",
+    "due": "应付款项"
+  },
+  "transport": {
+    "routes": "路线",
+    "assignments": "分配",
+    "fees": "费用"
+  },
+  "hostel": {
+    "rooms": "房间",
+    "assignments": "分配",
+    "fees": "费用"
+  },
+  "library": {
+    "books": "书籍",
+    "issued": "已借出的书",
+    "returns": "归还"
+  },
+  "inventory": {
+    "items": "物品",
+    "stock": "库存",
+    "transactions": "交易"
+  },
+  "reports": {
+    "academic": "学术",
+    "financial": "财务",
+    "attendance": "考勤"
+  },
+  "settings": {
+    "general": "常规",
+    "account": "账户",
+    "security": "安全",
+    "users": "用户",
+    "roles": "角色",
+    "title": "设置",
+    "appearance": "外观",
+    "theme": "主题",
+    "light": "浅色",
+    "dark": "深色",
+    "system": "系统",
+    "color_scheme": "配色方案",
+    "font_size": "字体大小",
+    "small": "小",
+    "medium": "中",
+    "large": "大",
+    "language": "语言"
+  },
+  "auth": {
+    "sign_in": "登录",
+    "sign_out": "注销",
+    "register": "注册",
+    "forgot_password": "忘记密码",
+    "reset_password": "重置密码",
+    "email": "电子邮件",
+    "password": "密码",
+    "confirm_password": "确认密码",
+    "remember_me": "记住我",
+    "login": "登录"
+  },
+  "actions": {
+    "save": "保存",
+    "cancel": "取消",
+    "edit": "编辑",
+    "delete": "删除",
+    "view": "查看",
+    "add": "添加",
+    "search": "搜索",
+    "filter": "筛选",
+    "export": "导出",
+    "import": "导入",
+    "print": "打印",
+    "download": "下载",
+    "upload": "上传",
+    "submit": "提交",
+    "confirm": "确认",
+    "reject": "拒绝"
+  },
+  "languages": {
+    "en": "英语",
+    "es": "西班牙语",
+    "fr": "法语",
+    "ar": "阿拉伯语",
+    "zh": "中文"
+  },
+  "security": {
+    "change_password": "更改密码",
+    "two_factor": "双因素认证",
+    "login_history": "登录历史",
+    "security_logs": "安全日志"
+  }
+} 

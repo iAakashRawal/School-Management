@@ -1,0 +1,143 @@
+/**
+ * RTL (Right-to-Left) Support Styles
+ */
+
+/* Basic RTL transformations */
+[dir="rtl"] {
+  /* Text alignment */
+  text-align: right;
+  
+  /* Reverse flex directions */
+  .flex-row {
+    flex-direction: row-reverse;
+  }
+  
+  /* Adjust margins and paddings */
+  .ml-auto {
+    margin-left: 0 !important;
+    margin-right: auto !important;
+  }
+  
+  .mr-auto {
+    margin-right: 0 !important;
+    margin-left: auto !important;
+  }
+  
+  /* Sidebar adjustments */
+  .pl-64 {
+    padding-left: 0 !important;
+    padding-right: 16rem !important;
+  }
+  
+  /* Icons with margins */
+  .mr-1, .mr-2, .mr-3, .mr-4 {
+    margin-right: 0 !important;
+  }
+  
+  .mr-1 {
+    margin-left: 0.25rem !important;
+  }
+  
+  .mr-2 {
+    margin-left: 0.5rem !important;
+  }
+  
+  .mr-3 {
+    margin-left: 0.75rem !important;
+  }
+  
+  .mr-4 {
+    margin-left: 1rem !important;
+  }
+  
+  /* Left and right positioning */
+  .left-0 {
+    left: auto !important;
+    right: 0 !important;
+  }
+  
+  .right-0 {
+    right: auto !important;
+    left: 0 !important;
+  }
+  
+  /* Sidebar transform */
+  .-translate-x-full {
+    transform: translateX(100%) !important;
+  }
+  
+  /* Input fields */
+  input, textarea {
+    text-align: right;
+  }
+  
+  /* Dropdown alignments */
+  .origin-top-right {
+    transform-origin: top left !important;
+  }
+  
+  /* Rounded corners */
+  .rounded-r-md {
+    border-radius: 0 !important;
+    border-top-left-radius: 0.375rem !important;
+    border-bottom-left-radius: 0.375rem !important;
+  }
+  
+  .rounded-l-md {
+    border-radius: 0 !important;
+    border-top-right-radius: 0.375rem !important;
+    border-bottom-right-radius: 0.375rem !important;
+  }
+}
+
+/* Specific component RTL adjustments */
+[dir="rtl"] {
+  /* Navigation items */
+  .sidebar-nav-item {
+    padding-right: 1rem;
+    padding-left: 0;
+  }
+  
+  /* Tables */
+  th, td {
+    text-align: right;
+  }
+  
+  /* Sidebar toggler */
+  .sidebar-toggle {
+    right: 16rem;
+    left: auto;
+  }
+  
+  /* Dropdown menus */
+  .dropdown-menu {
+    right: 0;
+    left: auto;
+  }
+  
+  /* Forms */
+  .form-label {
+    text-align: right;
+  }
+  
+  /* Checkboxes and radio buttons */
+  input[type="checkbox"],
+  input[type="radio"] {
+    margin-right: 0;
+    margin-left: 0.5rem;
+  }
+}
+
+/* Animation directions */
+@keyframes slide-in-rtl {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+[dir="rtl"] .animate-slide-in {
+  animation-name: slide-in-rtl;
+} 

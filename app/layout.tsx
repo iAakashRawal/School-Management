@@ -1,14 +1,12 @@
-import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
-import './globals.css'
-import '../styles/theme.css'
-import { ThemeProvider } from '@/components/providers/theme-provider'
-
-const inter = Inter({ subsets: ['latin'] })
+import type { Metadata } from 'next';
+import './globals.css';
+import '../styles/theme.css';
+import '../styles/rtl.css';
+import RootLayoutClient from './layout-client';
 
 export const metadata: Metadata = {
-  title: 'Inspire Academy - School Management System',
-  description: 'Inspiring excellence in education since 2005',
+  title: 'School Management System',
+  description: 'A comprehensive school management system',
   icons: {
     icon: [
       {
@@ -17,20 +15,12 @@ export const metadata: Metadata = {
       }
     ],
   },
-}
+};
 
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
-  return (
-    <html lang="en" suppressHydrationWarning>
-      <body className={inter.className}>
-        <ThemeProvider>
-          {children}
-        </ThemeProvider>
-      </body>
-    </html>
-  )
+  return <RootLayoutClient>{children}</RootLayoutClient>;
 } 

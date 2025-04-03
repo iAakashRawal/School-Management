@@ -136,6 +136,295 @@
   --ring: 188.7 94.5% 42.7%;
 }
 
+/* Neutral Theme */
+:root.theme-neutral {
+  --primary: 0 0% 32.2%;
+  --primary-foreground: 0 0% 98%;
+  --secondary: 0 0% 96.1%;
+  --secondary-foreground: 0 0% 9%;
+  --ring: 0 0% 32.2%;
+}
+
+.dark.theme-neutral {
+  --primary: 0 0% 14.9%;
+  --primary-foreground: 0 0% 98%;
+  --secondary: 0 0% 14.9%;
+  --secondary-foreground: 0 0% 98%;
+  --ring: 0 0% 14.9%;
+}
+
+/* Slate Theme */
+:root.theme-slate {
+  --primary: 215.4 16.3% 46.9%;
+  --primary-foreground: 210 40% 98%;
+  --secondary: 215 20.2% 65.1%;
+  --secondary-foreground: 222.2 47.4% 11.2%;
+  --ring: 215.4 16.3% 46.9%;
+}
+
+.dark.theme-slate {
+  --primary: 217.2 32.6% 17.5%;
+  --primary-foreground: 210 40% 98%;
+  --secondary: 215.4 16.3% 46.9%;
+  --secondary-foreground: 210 40% 98%;
+  --ring: 217.2 32.6% 17.5%;
+}
+
+/* Gray Theme */
+:root.theme-gray {
+  --primary: 220 8.9% 46.1%;
+  --primary-foreground: 210 40% 98%;
+  --secondary: 220 13% 91%;
+  --secondary-foreground: 220 14.3% 95.9%;
+  --ring: 220 8.9% 46.1%;
+}
+
+.dark.theme-gray {
+  --primary: 217.2 32.6% 17.5%;
+  --primary-foreground: 210 40% 98%;
+  --secondary: 217.2 32.6% 17.5%;
+  --secondary-foreground: 210 40% 98%;
+  --ring: 217.2 32.6% 17.5%;
+}
+
+/* Zinc Theme */
+:root.theme-zinc {
+  --primary: 240 3.7% 15.9%;
+  --primary-foreground: 0 0% 98%;
+  --secondary: 240 5.9% 90%;
+  --secondary-foreground: 240 3.7% 15.9%;
+  --ring: 240 3.7% 15.9%;
+}
+
+.dark.theme-zinc {
+  --primary: 240 3.7% 15.9%;
+  --primary-foreground: 0 0% 98%;
+  --secondary: 240 3.7% 15.9%;
+  --secondary-foreground: 0 0% 98%;
+  --ring: 240 3.7% 15.9%;
+}
+
+/* Stone Theme */
+:root.theme-stone {
+  --primary: 25 5.3% 44.7%;
+  --primary-foreground: 0 0% 98%;
+  --secondary: 60 4.8% 95.9%;
+  --secondary-foreground: 25 5.3% 44.7%;
+  --ring: 25 5.3% 44.7%;
+}
+
+.dark.theme-stone {
+  --primary: 24 9.8% 10%;
+  --primary-foreground: 0 0% 98%;
+  --secondary: 24 9.8% 10%;
+  --secondary-foreground: 0 0% 98%;
+  --ring: 24 9.8% 10%;
+}
+
+/* Red Theme */
+:root.theme-red {
+  --primary: 0 72.2% 50.6%;
+  --primary-foreground: 0 0% 98%;
+  --secondary: 0 96% 89%;
+  --secondary-foreground: 0 72.2% 50.6%;
+  --ring: 0 72.2% 50.6%;
+}
+
+.dark.theme-red {
+  --primary: 0 72.2% 50.6%;
+  --primary-foreground: 0 0% 98%;
+  --secondary: 0 72.2% 30.6%;
+  --secondary-foreground: 0 0% 98%;
+  --ring: 0 72.2% 50.6%;
+}
+
+/* Amber Theme */
+:root.theme-amber {
+  --primary: 38 92.7% 50.2%;
+  --primary-foreground: 0 0% 98%;
+  --secondary: 39 100% 93.9%;
+  --secondary-foreground: 38 92.7% 30.2%;
+  --ring: 38 92.7% 50.2%;
+}
+
+.dark.theme-amber {
+  --primary: 38 92.7% 50.2%;
+  --primary-foreground: 0 0% 98%;
+  --secondary: 39 70% 30%;
+  --secondary-foreground: 0 0% 98%;
+  --ring: 38 92.7% 50.2%;
+}
+
+/* Yellow Theme */
+:root.theme-yellow {
+  --primary: 48 96.5% 50%;
+  --primary-foreground: 0 0% 98%;
+  --secondary: 49 100% 93.9%;
+  --secondary-foreground: 48 96.5% 30%;
+  --ring: 48 96.5% 50%;
+}
+
+.dark.theme-yellow {
+  --primary: 48 96.5% 50%;
+  --primary-foreground: 0 0% 98%;
+  --secondary: 53 98% 30%;
+  --secondary-foreground: 0 0% 98%;
+  --ring: 48 96.5% 50%;
+}
+
+/* Lime Theme */
+:root.theme-lime {
+  --primary: 84.3 74.2% 42.5%;
+  --primary-foreground: 0 0% 98%;
+  --secondary: 85 100% 93.9%;
+  --secondary-foreground: 84.3 74.2% 22.5%;
+  --ring: 84.3 74.2% 42.5%;
+}
+
+.dark.theme-lime {
+  --primary: 84.3 74.2% 42.5%;
+  --primary-foreground: 0 0% 98%;
+  --secondary: 82 84% 30%;
+  --secondary-foreground: 0 0% 98%;
+  --ring: 84.3 74.2% 42.5%;
+}
+
+/* Green Theme */
+:root.theme-green {
+  --primary: 142.1 76.2% 36.3%;
+  --primary-foreground: 0 0% 98%;
+  --secondary: 141 84% 93.4%;
+  --secondary-foreground: 142.1 76.2% 26.3%;
+  --ring: 142.1 76.2% 36.3%;
+}
+
+.dark.theme-green {
+  --primary: 142.1 76.2% 36.3%;
+  --primary-foreground: 0 0% 98%;
+  --secondary: 143 64% 24%;
+  --secondary-foreground: 0 0% 98%;
+  --ring: 142.1 76.2% 36.3%;
+}
+
+/* Teal Theme */
+:root.theme-teal {
+  --primary: 172.5 66% 50.4%;
+  --primary-foreground: 0 0% 98%;
+  --secondary: 173 80% 93.2%;
+  --secondary-foreground: 172.5 66% 30.4%;
+  --ring: 172.5 66% 50.4%;
+}
+
+.dark.theme-teal {
+  --primary: 172.5 66% 50.4%;
+  --primary-foreground: 0 0% 98%;
+  --secondary: 173 66% 30.4%;
+  --secondary-foreground: 0 0% 98%;
+  --ring: 172.5 66% 50.4%;
+}
+
+/* Sky Theme */
+:root.theme-sky {
+  --primary: 198.6 88.7% 48.4%;
+  --primary-foreground: 0 0% 98%;
+  --secondary: 199 100% 94.8%;
+  --secondary-foreground: 198.6 88.7% 28.4%;
+  --ring: 198.6 88.7% 48.4%;
+}
+
+.dark.theme-sky {
+  --primary: 198.6 88.7% 48.4%;
+  --primary-foreground: 0 0% 98%;
+  --secondary: 199 70% 30%;
+  --secondary-foreground: 0 0% 98%;
+  --ring: 198.6 88.7% 48.4%;
+}
+
+/* Blue Theme */
+:root.theme-blue {
+  --primary: 221.2 83.2% 53.3%;
+  --primary-foreground: 0 0% 98%;
+  --secondary: 214 100% 96.1%;
+  --secondary-foreground: 221.2 83.2% 33.3%;
+  --ring: 221.2 83.2% 53.3%;
+}
+
+.dark.theme-blue {
+  --primary: 221.2 83.2% 53.3%;
+  --primary-foreground: 0 0% 98%;
+  --secondary: 222 74% 30%;
+  --secondary-foreground: 0 0% 98%;
+  --ring: 221.2 83.2% 53.3%;
+}
+
+/* Indigo Theme */
+:root.theme-indigo {
+  --primary: 243.4 75.4% 58.6%;
+  --primary-foreground: 0 0% 98%;
+  --secondary: 244 100% 96.5%;
+  --secondary-foreground: 243.4 75.4% 38.6%;
+  --ring: 243.4 75.4% 58.6%;
+}
+
+.dark.theme-indigo {
+  --primary: 243.4 75.4% 58.6%;
+  --primary-foreground: 0 0% 98%;
+  --secondary: 242 56% 30%;
+  --secondary-foreground: 0 0% 98%;
+  --ring: 243.4 75.4% 58.6%;
+}
+
+/* Violet Theme */
+:root.theme-violet {
+  --primary: 262.1 83.3% 57.8%;
+  --primary-foreground: 0 0% 98%;
+  --secondary: 261 100% 95.5%;
+  --secondary-foreground: 262.1 83.3% 37.8%;
+  --ring: 262.1 83.3% 57.8%;
+}
+
+.dark.theme-violet {
+  --primary: 262.1 83.3% 57.8%;
+  --primary-foreground: 0 0% 98%;
+  --secondary: 261 72% 30%;
+  --secondary-foreground: 0 0% 98%;
+  --ring: 262.1 83.3% 57.8%;
+}
+
+/* Fuchsia Theme */
+:root.theme-fuchsia {
+  --primary: 301.4 91.1% 48.4%;
+  --primary-foreground: 0 0% 98%;
+  --secondary: 301 100% 96.3%;
+  --secondary-foreground: 301.4 91.1% 28.4%;
+  --ring: 301.4 91.1% 48.4%;
+}
+
+.dark.theme-fuchsia {
+  --primary: 301.4 91.1% 48.4%;
+  --primary-foreground: 0 0% 98%;
+  --secondary: 301 64% 28%;
+  --secondary-foreground: 0 0% 98%;
+  --ring: 301.4 91.1% 48.4%;
+}
+
+/* Pink Theme */
+:root.theme-pink {
+  --primary: 336.8 80.9% 57.8%;
+  --primary-foreground: 0 0% 98%;
+  --secondary: 336 100% 96.5%;
+  --secondary-foreground: 336.8 80.9% 37.8%;
+  --ring: 336.8 80.9% 57.8%;
+}
+
+.dark.theme-pink {
+  --primary: 336.8 80.9% 57.8%;
+  --primary-foreground: 0 0% 98%;
+  --secondary: 336 64% 30%;
+  --secondary-foreground: 0 0% 98%;
+  --ring: 336.8 80.9% 57.8%;
+}
+
 /* Font Size Classes */
 .text-small {
   font-size: 0.875rem;

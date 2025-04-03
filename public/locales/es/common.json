@@ -1,0 +1,137 @@
+{
+  "app_name": "Sistema de Gestión Escolar",
+  "dashboard": "Panel de Control",
+  "navigation": {
+    "dashboard": "Panel de Control",
+    "students": "Estudiantes",
+    "teachers": "Profesores",
+    "classes": "Clases",
+    "attendance": "Asistencia",
+    "exams": "Exámenes",
+    "fees": "Cuotas",
+    "transport": "Transporte",
+    "hostel": "Residencia",
+    "library": "Biblioteca",
+    "inventory": "Inventario",
+    "reports": "Informes",
+    "drawing": "Lienzo de Dibujo",
+    "settings": "Configuración"
+  },
+  "students": {
+    "all": "Todos los Estudiantes",
+    "add": "Añadir Estudiante",
+    "import": "Importación Masiva"
+  },
+  "teachers": {
+    "all": "Todos los Profesores",
+    "add": "Añadir Profesor",
+    "assign": "Asignar Clases"
+  },
+  "classes": {
+    "all": "Todas las Clases",
+    "add": "Añadir Clase",
+    "assign": "Asignar Profesores"
+  },
+  "attendance": {
+    "daily": "Asistencia Diaria",
+    "monthly": "Informe Mensual",
+    "history": "Historial del Estudiante"
+  },
+  "exams": {
+    "schedule": "Calendario de Exámenes",
+    "results": "Resultados",
+    "report_cards": "Boletas de Calificaciones"
+  },
+  "fees": {
+    "structure": "Estructura de Cuotas",
+    "collections": "Cobros",
+    "due": "Pagos Pendientes"
+  },
+  "transport": {
+    "routes": "Rutas",
+    "assignments": "Asignaciones",
+    "fees": "Cuotas"
+  },
+  "hostel": {
+    "rooms": "Habitaciones",
+    "assignments": "Asignaciones",
+    "fees": "Cuotas"
+  },
+  "library": {
+    "books": "Libros",
+    "issued": "Libros Prestados",
+    "returns": "Devoluciones"
+  },
+  "inventory": {
+    "items": "Artículos",
+    "stock": "Existencias",
+    "transactions": "Transacciones"
+  },
+  "reports": {
+    "academic": "Académico",
+    "financial": "Financiero",
+    "attendance": "Asistencia"
+  },
+  "settings": {
+    "general": "General",
+    "account": "Cuenta",
+    "security": "Seguridad",
+    "users": "Usuarios",
+    "roles": "Roles",
+    "title": "Configuración",
+    "appearance": "Apariencia",
+    "theme": "Tema",
+    "light": "Claro",
+    "dark": "Oscuro",
+    "system": "Sistema",
+    "color_scheme": "Esquema de Color",
+    "font_size": "Tamaño de Fuente",
+    "small": "Pequeño",
+    "medium": "Mediano",
+    "large": "Grande",
+    "language": "Idioma"
+  },
+  "auth": {
+    "sign_in": "Iniciar Sesión",
+    "sign_out": "Cerrar Sesión",
+    "register": "Registrar",
+    "forgot_password": "Olvidé la Contraseña",
+    "reset_password": "Restablecer Contraseña",
+    "email": "Correo Electrónico",
+    "password": "Contraseña",
+    "confirm_password": "Confirmar Contraseña",
+    "remember_me": "Recordarme",
+    "login": "Iniciar Sesión"
+  },
+  "actions": {
+    "save": "Guardar",
+    "cancel": "Cancelar",
+    "edit": "Editar",
+    "delete": "Eliminar",
+    "view": "Ver",
+    "add": "Añadir",
+    "search": "Buscar",
+    "filter": "Filtrar",
+    "export": "Exportar",
+    "import": "Importar",
+    "print": "Imprimir",
+    "download": "Descargar",
+    "upload": "Subir",
+    "submit": "Enviar",
+    "confirm": "Confirmar",
+    "reject": "Rechazar"
+  },
+  "languages": {
+    "en": "Inglés",
+    "es": "Español",
+    "fr": "Francés",
+    "ar": "Árabe",
+    "zh": "Chino"
+  },
+  "security": {
+    "change_password": "Cambiar Contraseña",
+    "two_factor": "Autenticación de Dos Factores",
+    "login_history": "Historial de Inicio de Sesión",
+    "security_logs": "Registros de Seguridad"
+  }
+} 

@@ -83,8 +83,11 @@ model Class {
   academicYear  String
   students      Student[]
   assignments   ClassAssignment[]
+  exams         Exam[]
   createdAt     DateTime  @default(now())
   updatedAt     DateTime  @updatedAt
+
+  @@unique([name, section, academicYear])
 }
 
 // Class Assignment model
@@ -236,27 +239,39 @@ model LibraryAssignment {
 // Inventory Item model
 model InventoryItem {
   id            String    @id @default(cuid())
-  name          String
+  name          String    @unique
   category      String
   description   String?
-  quantity      Int
+  quantity      Int         @default(0)
   unit          String
-  transactions  InventoryTransaction[]
   createdAt     DateTime  @default(now())
   updatedAt     DateTime  @updatedAt
+
+  // Relations
+  transactions  InventoryTransaction[]
+
+  @@index([category])
+  @@index([quantity])
 }
 
 // Inventory Transaction model
 model InventoryTransaction {
   id            String    @id @default(cuid())
-  itemId        String
-  item          InventoryItem @relation(fields: [itemId], references: [id])
-  type          TransactionType
+  type          String    // 'IN' or 'OUT'
   quantity      Int
   date          DateTime
-  notes         String?
+  remarks       String?
+  referenceNo   String?
   createdAt     DateTime  @default(now())
   updatedAt     DateTime  @updatedAt
+
+  // Relations
+  itemId        String
+  item          InventoryItem @relation(fields: [itemId], references: [id])
+
+  @@index([type])
+  @@index([date])
+  @@index([itemId])
 }
 
 // Enums
@@ -314,9 +329,4 @@ enum BookStatus {
   RETURNED
   OVERDUE
   LOST
-}
-
-enum TransactionType {
-  IN
-  OUT
 } 
